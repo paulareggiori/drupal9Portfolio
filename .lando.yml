@@ -1,0 +1,4 @@
+name: drupal9portfolio
+recipe: drupal9
+config:
+  webroot: web
