@@ -1,0 +1,26 @@
+uuid: 22b4d2dd-89c7-4f7f-a931-f03c5a96154a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.about.body
+    - field.field.node.about.field_about_image
+    - node.type.about
+  module:
+    - text
+    - user
+id: node.about.default
+targetEntityType: node
+bundle: about
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_about_image: true
+  links: true

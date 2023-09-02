@@ -1,0 +1,17 @@
+uuid: e0b45ebc-714b-4c60-94a7-34bed5da5e56
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Project
+type: project
+description: 'Content type made to add projects to this portfolio.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,24 @@
+uuid: be1eb8c2-0d82-442e-8969-71a03fa3fb41
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_created
+    - node.type.project
+  module:
+    - datetime
+id: node.project.field_created
+field_name: field_created
+entity_type: node
+bundle: project
+label: Created
+description: 'The date of when the projected was started.'
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

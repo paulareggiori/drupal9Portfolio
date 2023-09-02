@@ -1,0 +1,8 @@
+uuid: c7c52806-3fc5-4973-a7c4-8f66fefd83e7
+langcode: en
+status: true
+dependencies: {  }
+name: 'Programming Language'
+vid: programming_language
+description: 'The programming language, frameworks and tools used on a project.'
+weight: 0

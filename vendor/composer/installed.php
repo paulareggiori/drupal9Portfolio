@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => 'd717075072031e715f7fa8c1f93fc7e374665923',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -161,6 +161,15 @@
             'install_path' => __DIR__ . '/../doctrine/reflection',
             'aliases' => array(),
             'reference' => '1034e5e71f89978b80f9c1570e7226f6c3b9b6fb',
+            'dev_requirement' => false,
+        ),
+        'drupal/admin_toolbar' => array(
+            'pretty_version' => '3.4.1',
+            'version' => '3.4.1.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/admin_toolbar',
+            'aliases' => array(),
+            'reference' => '3.4.1',
             'dev_requirement' => false,
         ),
         'drupal/core' => array(
@@ -350,12 +359,12 @@
             ),
         ),
         'drupal/recommended-project' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'd717075072031e715f7fa8c1f93fc7e374665923',
             'dev_requirement' => false,
         ),
         'drupal/showcase_lite' => array(

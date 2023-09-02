@@ -1,0 +1,27 @@
+uuid: 65a50f1a-8127-417d-b9e3-31ed5b12af8e
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - showcase_lite
+_core:
+  default_config_hash: dZXpN6IEjFbsyyePltUL7M__x7fSU-CbuKn2_YBkoIc
+id: footer
+theme: showcase_lite
+region: sub_footer_first
+weight: -7
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

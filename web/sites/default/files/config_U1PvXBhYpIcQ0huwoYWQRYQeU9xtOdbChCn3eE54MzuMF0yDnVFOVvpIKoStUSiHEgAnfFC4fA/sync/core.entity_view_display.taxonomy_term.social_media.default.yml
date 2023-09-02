@@ -1,0 +1,48 @@
+uuid: 0d27f19d-6492-4053-8a92-e7423c01e887
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.social_media.field_social_icons
+    - field.field.taxonomy_term.social_media.field_social_link
+    - taxonomy.vocabulary.social_media
+  module:
+    - image
+    - link
+    - text
+id: taxonomy_term.social_media.default
+targetEntityType: taxonomy_term
+bundle: social_media
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_social_icons:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_social_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }
