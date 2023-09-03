@@ -1,0 +1,65 @@
+uuid: 92a0881c-efed-4158-a620-0a5a0c976d99
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.social_media.field_social_icons
+    - field.field.taxonomy_term.social_media.field_social_link
+    - image.style.thumbnail
+    - taxonomy.vocabulary.social_media
+  module:
+    - image
+    - link
+    - path
+    - text
+id: taxonomy_term.social_media.default
+targetEntityType: taxonomy_term
+bundle: social_media
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_social_icons:
+    type: image_image
+    weight: 101
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_social_link:
+    type: link_default
+    weight: 102
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 100
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden: {  }

@@ -5,8 +5,12 @@
 
 /*Node*/
 .node--view-mode-teaser {
-  padding: 0 0 30px 0;
-  margin-bottom: 40px;
+  padding: 0 0 0px 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.node--view-mode-teaser .node__title{
+  font-size: 20px;
 }
 .node__header {
   padding: 0 0 5px;
@@ -19,16 +23,19 @@
 .node__title {
   font-size: 26px;
   margin-top: 0px;
+  text-align: center;
 }
 .node__header h2 {
   margin: 0 0 5px;
 }
 .node__links {
   margin-top: 35px;
+  font-size: 26px;
 }
 .node__container {
   position: relative;
 }
+
 .feed-icon {
   display: block;
   margin: 0px 0 60px;
@@ -64,6 +71,6 @@
 /*subtitle*/
 .field--name-field-mt-subtitle {
   font-size: 12px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   padding-bottom: 15px;
 }

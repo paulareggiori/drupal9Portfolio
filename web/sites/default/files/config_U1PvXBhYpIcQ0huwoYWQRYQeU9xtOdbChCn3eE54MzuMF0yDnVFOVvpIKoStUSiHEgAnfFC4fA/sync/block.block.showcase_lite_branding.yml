@@ -1,0 +1,25 @@
+uuid: 6592df76-8d8d-4a65-ab90-749f5bae9a89
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - showcase_lite
+_core:
+  default_config_hash: 0XlRVfMerlx78vdlHlnI2--hGPFwgtjE2Xpqdb2cTOc
+id: showcase_lite_branding
+theme: showcase_lite
+region: header_first
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

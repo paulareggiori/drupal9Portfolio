@@ -21,7 +21,7 @@
 }
 .headings-wide-spacing-enabled .nav-tabs > li > a {
   letter-spacing: 0.2em;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 .nav-tabs li a i {
   padding-right: 10px;

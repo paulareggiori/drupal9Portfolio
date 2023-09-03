@@ -1,0 +1,73 @@
+uuid: d2fa9649-3440-461d-95aa-2034b27d3894
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.project.body
+    - field.field.node.project.field_created
+    - field.field.node.project.field_icon
+    - field.field.node.project.field_programming_language
+    - field.field.node.project.field_project_img
+    - field.field.node.project.field_repository
+    - node.type.project
+  module:
+    - datetime
+    - image
+    - link
+    - text
+    - user
+id: node.project.default
+targetEntityType: node
+bundle: project
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_created:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: html_month
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_programming_language:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_project_img:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_repository:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: _blank
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  field_icon: true
+  links: true

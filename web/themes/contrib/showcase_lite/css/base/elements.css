@@ -15,6 +15,8 @@ body {
 p {
   margin: 0;
   padding: 0 0 15px 0;
+  text-align: justify;
+  text-justify: auto;
 }
 p.large {
   font-size: 18px;
@@ -49,6 +51,26 @@ a:focus {
   outline: none;
   text-decoration: none;
 }
+.field--type-link a {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 3;
+}
+.field--type-link a:hover {
+  letter-spacing: 8px;
+  color: #202020;
+}
+.field--type-link a:active {
+  text-decoration: line-through dashed;
+}
+.field--name-field-social-icons a img {
+  filter: invert(20%);
+}
+.field--name-field-social-icons a:hover img {
+  transform: scale(1.25);
+  filter: invert(0%);
+}
 .region--light-typography.region--dark-background a.is-active {
   color: #ddd;
 }
@@ -73,7 +95,7 @@ a.link--bordered:hover,
 .region--light-typography a.link--bordered:hover,
 .region--light-typography .link--bordered a:hover {
   border-color: transparent;
-  text-decoration: none;  
+  text-decoration: none;
 }
 a.link--hover-style-2,
 .link--hover-style-2 a {
@@ -143,7 +165,7 @@ a.link--hover-style-2:hover:before,
 .region--light-typography a.link--dark,
 .region--light-typography .link--dark a {
   color: #ffffff;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .region--light-typography a:hover,
 .region--light-typography a:focus,
@@ -152,7 +174,7 @@ a.link--hover-style-2:hover:before,
 .region--light-typography .link--dark a:hover,
 .region--light-typography .link--dark a:focus {
   color: #ffffff;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .region--light-typography.region--dark-background a {
   text-decoration: none;
@@ -168,6 +190,9 @@ img {
   height: auto;
   max-width: 100%;
   border-radius: 5px;
+}
+.views-field-field-about-image img {
+  border-radius: 30px;
 }
 img.img--bordered,
 .img--bordered img {
@@ -267,7 +292,7 @@ h6 {
   text-transform: uppercase;
 }
 h1 {
-  font-size: 40px;
+  font-size: 60px;
 }
 h2 {
   font-size: 35px;
@@ -289,8 +314,11 @@ h1.title {
 }
 h1.page-title {
   margin-bottom: 20px;
+  text-align: center;
 }
-
+h2.title {
+  font-size: 50px;
+}
 /*resposinve text align*/
 @media (min-width: 1200px) {
   .lg-text-center {
@@ -325,7 +353,7 @@ h1.page-title {
   margin-bottom: 15px;
 }
 .block-title--extra-large {
-  font-size: 50px;
+  font-size: 35px;
   margin-bottom: 15px;
 }
 @media (max-width: 767px) {
@@ -387,8 +415,8 @@ nav > h2,
 .col-md-12 h2.title,
 .col-md-12 nav > h2,
 .col-md-12 .block-search > h2 {
-  font-size: 35px;
-  padding-bottom: 70px;
+  font-size: 50px;
+  padding-bottom: 50px;
   margin: 0;
   border-bottom: none;
   font-weight: 300;

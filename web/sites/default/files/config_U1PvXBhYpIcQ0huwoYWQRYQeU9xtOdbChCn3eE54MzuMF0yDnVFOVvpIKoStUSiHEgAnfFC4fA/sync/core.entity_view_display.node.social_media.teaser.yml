@@ -1,0 +1,39 @@
+uuid: 24ab218e-2b62-4dea-8306-5dc718176f80
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.social_media.field_social_icons
+    - field.field.node.social_media.field_social_link
+    - image.style.thumbnail
+    - node.type.social_media
+  module:
+    - image
+    - linked_field
+    - user
+id: node.social_media.teaser
+targetEntityType: node
+bundle: social_media
+mode: teaser
+content:
+  field_social_icons:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      linked_field:
+        linked: '1'
+        type: field
+        destination: field_social_link
+        advanced:
+          target: target_blank
+    weight: 0
+    region: content
+hidden:
+  field_social_link: true
+  links: true

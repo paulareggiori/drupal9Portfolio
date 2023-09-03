@@ -23,7 +23,7 @@ a.link--dark:hover,
 .link--dark a:hover,
 a.link--dark:focus,
 .link--dark a:focus {
-  color: #505050;
+  color: #373737;
 }
 a.link--bordered,
 .link--bordered a {
@@ -294,7 +294,7 @@ a.button.button--hover-style-2:before,
 .header-container ul.menu li a:hover,
 .header-container ul.menu li a.is-active,
 .header-container ul.menu li.active-trail > a {
-  color: #505050;
+  color: #fff;
 }
 .header-container .sf-menu li.sfHover > a {
   color: #505050;
