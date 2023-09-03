@@ -8,12 +8,13 @@ Also, I used a free custom theme called [Showcase Lite](https://www.drupal.org/p
 
 1. First install Lando:
 Install Lando for your OS: https://docs.lando.dev/basics/installation.html
-* `tests/test_changeregion.py`
 2. Clone this repository
   git clone https://github.com/paulareggiori/drupal9Portfolio.git
 3. Run cd drupal9Portfolio to enter the folder
 4. Run lando start
 5. Run lando db-import ./artifacts/full_database.sql --host database
+6. Run lando drush cr && lando drush updb --no-post-updates -y
+7. Run lando info to check the local host path or the lando url and enjoy browsing.
 
 ## Creator: Paula Reggiori
 
