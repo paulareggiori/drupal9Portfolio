@@ -30,6 +30,7 @@
 }
 .node__links {
   margin-top: 35px;
+  font-size: 26px;
 }
 .node__container {
   position: relative;

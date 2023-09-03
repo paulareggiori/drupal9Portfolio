@@ -51,6 +51,19 @@ a:focus {
   outline: none;
   text-decoration: none;
 }
+.field--type-link a {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 3;
+}
+.field--type-link a:hover {
+  letter-spacing: 8px;
+  color: #202020;
+}
+.field--type-link a:active {
+  text-decoration: line-through dashed;
+}
 .region--light-typography.region--dark-background a.is-active {
   color: #ddd;
 }
