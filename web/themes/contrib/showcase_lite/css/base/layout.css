@@ -53,11 +53,11 @@
   z-index: 100;
 }
 .header__container {
-  padding: 20px 0;
+  padding: 0px 0;
   position: relative;
 }
 .header-container .header.region--gray-background {
-  background-color: #f1f1f1;
+  background-color: #373737;
 }
 .header-first {
   padding: 5px 0;
@@ -190,7 +190,7 @@
 }
 .headings-wide-spacing-enabled .subfooter__section {
   letter-spacing: 0.2em;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 @media (max-width: 991px) {
   .subfooter__section {
@@ -323,6 +323,11 @@
 .region--no-paddings .subfooter__container {
   padding-top: 0;
   padding-bottom: 0;
+}
+.content-bottom__section .views-element-container {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 /*Bordered Container*/

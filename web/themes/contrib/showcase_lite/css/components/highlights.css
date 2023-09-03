@@ -30,7 +30,7 @@
 }
 .headings-wide-spacing-enabled .highlight-body {
   letter-spacing: 0.25em;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
 /*highoights @colored regions*/
@@ -67,5 +67,5 @@
 }
 .headings-wide-spacing-enabled .highlight-2-body {
   letter-spacing: 0.25em;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }

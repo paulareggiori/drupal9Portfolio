@@ -8,7 +8,7 @@
 @media (min-width: 768px) {
   .page-container-border-enabled .header-container .container-fluid .header-third .field--mt-dropdowns-block {
     padding-right: 15px;
-  } 
+  }
 }
 .dropdown-trigger {
   -webkit-appearance: none;
@@ -34,7 +34,7 @@
   background-color: #f4f4f4;
 }
 .header.region--gray-background .dropdown-menu {
-  background-color: #f1f1f1;
+  background-color: #373737;
 }
 .region--black-background .dropdown-menu {
   background-color: #1d1d1d;

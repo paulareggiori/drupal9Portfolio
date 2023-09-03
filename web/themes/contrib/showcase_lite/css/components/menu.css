@@ -73,7 +73,7 @@ ul.menu li > a:before {
   font-weight: 600;
   padding: 5px 17px;
   margin: 0 5px;
-  color: #2d2d2d;
+  color: #dbdbdb;
 }
 .headings-wide-spacing-enabled .header-container ul.menu li a {
   letter-spacing: 0.25em;
@@ -335,7 +335,7 @@ ul.menu li > a:before {
   background-color: #f4f4f4;
 }
 .header.region--gray-background .sf-menu.menu ul {
-  background-color: #f1f1f1;
+  background-color: #373737;
 }
 .region--black-background .sf-menu.menu ul {
   background-color: #1d1d1d;
