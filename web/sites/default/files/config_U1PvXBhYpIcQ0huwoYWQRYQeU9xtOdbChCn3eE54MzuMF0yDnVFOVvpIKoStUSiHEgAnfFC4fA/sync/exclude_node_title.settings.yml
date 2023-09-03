@@ -1,0 +1,20 @@
+_core:
+  default_config_hash: 0yJNd4uWv8TzhYEPQBDiApPL2e8ar88kBmQrzDjNCqc
+nid_list: {  }
+translation_sync: true
+search: false
+type: hidden
+content_types:
+  about: none
+  article: none
+  page: none
+  project: none
+  social_media: all
+content_type_modes:
+  about: {  }
+  article: {  }
+  page: {  }
+  project: {  }
+  social_media:
+    - full
+    - teaser

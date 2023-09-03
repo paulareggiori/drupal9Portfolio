@@ -1,24 +1,22 @@
-uuid: f2009aa7-3f2b-4860-8721-1ba2da152f60
+uuid: 4a048dd9-1821-46ba-8545-beb14bc22617
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.taxonomy_term.field_social_icons
-    - field.storage.taxonomy_term.field_social_link
-    - image.style.thumbnail
-    - taxonomy.vocabulary.social_media
+    - core.entity_view_mode.node.teaser
+    - field.storage.node.field_social_icons
+    - node.type.social_media
   module:
     - image
-    - link
-    - taxonomy
+    - node
     - user
 id: social_media_icons
 label: 'Social media icons'
 module: views
 description: ''
 tag: ''
-base_table: taxonomy_term_field_data
-base_field: tid
+base_table: node_field_data
+base_field: nid
 display:
   default:
     id: default
@@ -28,48 +26,32 @@ display:
     display_options:
       title: 'Social media icons'
       fields:
-        field_social_icons:
-          id: field_social_icons
-          table: taxonomy_term__field_social_icons
-          field: field_social_icons
+        title:
+          id: title
+          table: node_field_data
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
           plugin_id: field
           label: ''
           exclude: false
           alter:
             alter_text: false
-            text: ''
             make_link: false
-            path: ''
             absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
+            word_boundary: false
+            ellipsis: false
             strip_tags: false
             trim: false
-            preserve_tags: ''
             html: false
           element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -77,14 +59,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: image
+          click_sort_column: value
+          type: string
           settings:
-            image_link: ''
-            image_style: thumbnail
-            image_loading:
-              attribute: lazy
-          group_column: ''
+            link_to_entity: true
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -94,73 +73,11 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_social_link:
-          id: field_social_link
-          table: taxonomy_term__field_social_link
-          field: field_social_link
-          relationship: none
-          group_type: group
-          admin_label: ''
+        field_social_icons:
+          id: field_social_icons
+          table: node__field_social_icons
+          field: field_social_icons
           plugin_id: field
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: uri
-          type: link
-          settings:
-            trim_length: 80
-            url_only: false
-            url_plain: false
-            rel: '0'
-            target: _blank
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
       pager:
         type: some
         options:
@@ -189,9 +106,9 @@ display:
       filters:
         status:
           id: status
-          table: taxonomy_term_field_data
+          table: node_field_data
           field: status
-          entity_type: taxonomy_term
+          entity_type: node
           entity_field: status
           plugin_id: boolean
           value: '1'
@@ -200,12 +117,12 @@ display:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
-        vid:
-          id: vid
-          table: taxonomy_term_field_data
-          field: vid
-          entity_type: taxonomy_term
-          entity_field: vid
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
           plugin_id: bundle
           value:
             social_media: social_media
@@ -215,7 +132,10 @@ display:
       style:
         type: grid
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: teaser
       query:
         type: views_query
         options:
@@ -233,10 +153,10 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.taxonomy_term.field_social_icons'
-        - 'config:field.storage.taxonomy_term.field_social_link'
+        - 'config:field.storage.node.field_social_icons'
   block_1:
     id: block_1
     display_title: Block
@@ -249,7 +169,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.taxonomy_term.field_social_icons'
-        - 'config:field.storage.taxonomy_term.field_social_link'
+        - 'config:field.storage.node.field_social_icons'

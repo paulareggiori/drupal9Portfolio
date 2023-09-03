@@ -64,6 +64,13 @@ a:focus {
 .field--type-link a:active {
   text-decoration: line-through dashed;
 }
+.field--name-field-social-icons a img {
+  filter: invert(20%);
+}
+.field--name-field-social-icons a:hover img {
+  transform: scale(1.25);
+  filter: invert(0%);
+}
 .region--light-typography.region--dark-background a.is-active {
   color: #ddd;
 }
@@ -183,6 +190,9 @@ img {
   height: auto;
   max-width: 100%;
   border-radius: 5px;
+}
+.views-field-field-about-image img {
+  border-radius: 30px;
 }
 img.img--bordered,
 .img--bordered img {
