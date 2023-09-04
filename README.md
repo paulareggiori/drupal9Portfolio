@@ -8,6 +8,7 @@ Also, I used a free custom theme called [Showcase Lite](https://www.drupal.org/p
 
 https://github.com/paulareggiori/drupal9Portfolio/assets/33421643/43984936-266e-4967-8b2d-a7f0b8acbc38
 
+Visit the live site (druapl8 version) here: https://www.preggiori.eu/
 ## Setup
 
 1. First install Lando:
